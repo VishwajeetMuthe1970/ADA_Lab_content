@@ -29,10 +29,12 @@ int main()
 
     getch();
 }
+
+// Defining the mergesort function.
 void mergesort(int a[20], int low, int high){
     int mid;
 
-    void combine(int a[20], int low, int mid, int high);
+    //void combine(int a[20], int low, int mid, int high);
 
     if(low<high){
         mid=(low+high)/2;
