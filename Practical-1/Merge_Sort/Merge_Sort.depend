@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1691487366 source:c:\vishwajeet_muthe_asoit_ce-1-ada\practical-1\merge_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -2,9 +2,11 @@
 #include<conio.h>
 void main()
 {
-	int i , j , n , a[20], temp;
+	int i , j , n, temp;
 	printf("Enter The Value of n : ");
 	scanf("%d",&n);
+	
+	int a[n];
 
 	for(i=0;i<n;i++)
 	{
@@ -12,17 +14,16 @@ void main()
 		scanf("%d",&a[i]);
 	}
 
-	for(i = 0; i < n-1; i++)
-	{
-		for(j = 0; j < n-1-i; j++)
-		{
-			if(a[j] > a[j+1])
-			{
-				temp = a[j];
-				a[j] = a[j+1];
-				a[j+1] = temp;
-			}
+	for(i=1; i<n; i++){
+		temp = a[i];
+		j=i-1;
+		
+		while((j>=0) && (a[j]>temp)){
+			a[j+1] = a[j];
+			j--;
 		}
+		
+		a[j+1] = temp;
 	}
 
 	for(i=0;i<n;i++)
